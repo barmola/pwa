@@ -1,0 +1,51 @@
+.mainContainer {
+  padding-left: 3vmin;
+  padding-right: 3vmin;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.banner {
+  height: 40vmax;
+}
+
+.formContainer {
+  width: 60vmin;
+  height: 100%;
+  margin-left: 10vmin;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.formBox {
+  padding: 5vmin;
+  border-radius: 3vmin;
+  -webkit-box-shadow: 10px 10px 45px -10px #ededed;
+  box-shadow: 10px 10px 45px -10px #ededed;
+}
+
+.loginText {
+  color: #18277A;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 4vmin;
+}
+
+@media only screen and (max-width: 600px) {
+  .banner {
+    display: none;
+  }
+  .formContainer {
+    width: 80vmin;
+    margin-top: 10vmin;
+  }
+}
+/*# sourceMappingURL=SignUp.module.css.map */

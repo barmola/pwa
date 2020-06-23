@@ -1,0 +1,56 @@
+.mainContainer{
+    padding-left: 3vmin;
+    padding-right: 3vmin;
+    overflow-y: hidden; 
+    overflow-x: hidden; 
+
+    
+}
+
+.banner{
+    height: 40vmax;
+}
+
+
+.formContainer{
+    // margin-top: 4vmax !important;
+    width: 60vmin;
+    height: 100%;
+    margin-left: 10vmin;
+    // margin-bottom: 3vmin !important;
+    justify-content: flex-end;
+    // align-items: flex-end;
+    flex-direction: row;
+    display: flex;
+}
+
+.formBox{
+    padding: 5vmin;
+    border-radius: 3vmin;
+
+    -webkit-box-shadow: 10px 10px 45px -10px rgba(237,237,237,1);
+-moz-box-shadow: 10px 10px 45px -10px rgba(237,237,237,1);
+box-shadow: 10px 10px 45px -10px rgba(237,237,237,1);
+}
+
+.loginText{
+    color:#18277A;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 4vmin;
+}
+
+
+
+
+@media only screen and (max-width:600px){
+    .banner{
+        display: none;
+    }
+
+    .formContainer{
+        width: 80vmin;
+        margin-top: 10vmin;
+    }
+    
+}

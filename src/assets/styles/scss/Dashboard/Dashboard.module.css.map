@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAA;EACN,OAAO,EAAE,IAAI;EACb,OAAO,EAAE,uBAAuB;EAChC,cAAc,EAAE,MAAM;CACzB;;AAED,AAAA,cAAc,CAAA;EACV,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,KAAK;CACpB;;AAED,AAAA,KAAK,CAAA;EACD,WAAW,EAAE,qBAAqB;EAClC,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,KAAK;EAChB,KAAK,EAAC,OAAO;CAChB",
+    "sources": [
+        "Dashboard.module.scss"
+    ],
+    "names": [],
+    "file": "Dashboard.module.css"
+}

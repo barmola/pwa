@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    padding: 3vmin 7vmin 3vmin 7vmin;
+    flex-direction: column;
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.name{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 4vmin;
+    color:#18277A;
+}
+
+// .icon{
+//     position: absolute;
+//     top:0;
+//     bottom:1;
+//     left:0;    
+//     right:10;
+// }

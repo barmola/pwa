@@ -1,0 +1,71 @@
+.mainContainer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.emailContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 2vmin;
+  padding-bottom: 2vmin;
+}
+
+.email {
+  border-radius: 100vmin;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 10px;
+}
+
+.emailField {
+  padding-left: 2vmin;
+}
+
+.emailIcon {
+  height: 3vmin;
+}
+
+.mobileContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 2vmin;
+  padding-bottom: 2vmin;
+}
+
+.formContainer {
+  width: 50vmin;
+  height: 100%;
+  -webkit-box-shadow: 0px 3px 27px -1px #f8f8f8;
+  box-shadow: 0px 3px 27px -1px #f8f8f8;
+  padding: 3vmin 2vmin 3vmin 2vmin;
+  border-radius: 2vmin;
+}
+
+.noBorder {
+  border-width: 0 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .formContainer {
+    width: 90vmin;
+  }
+  .emailIcon {
+    height: 4vmin;
+  }
+}
+/*# sourceMappingURL=InviteBox.module.css.map */

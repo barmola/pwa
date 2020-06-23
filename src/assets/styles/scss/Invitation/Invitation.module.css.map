@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAA;EACV,OAAO,EAAC,KACZ;CAAC;;AAED,AAAA,KAAK,CAAA;EACD,WAAW,EAAE,qBAAqB;EAClC,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,KAAK;EAChB,KAAK,EAAC,OAAO;CAChB",
+    "sources": [
+        "Invitation.module.scss"
+    ],
+    "names": [],
+    "file": "Invitation.module.css"
+}
