@@ -21,7 +21,7 @@ const authSuccess=(action,state)=>{
     return updateObject(state,{
         loading:false,
         isAuthenticated:true,
-        token:action.payload.access,
+        token:action.payload.data,
         error:null
     })
 }
@@ -29,7 +29,7 @@ const authSuccess=(action,state)=>{
 const authFail=(action,state)=>{
     return updateObject(state,{
         loading:false,
-        error:action.payload
+        error:action.payload.error
     })
 }
 

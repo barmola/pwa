@@ -2,8 +2,10 @@ import React,{Component} from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Header,Dashboard,Login,Invitation,_SignUp} from "./Pages"
-import {BrowserRouter as Router, Route,Switch,Link,withRouter} from "react-router-dom"
+import {BrowserRouter as Router, Route,Switch,Link,withRoute} from "react-router-dom"
 import {connect} from "react-redux"
+const token=localStorage.getItem('token')
+
 class App extends Component{
 
   constructor(props) {
@@ -15,6 +17,15 @@ class App extends Component{
   }
   
 
+  componentDidUpdate(prevProps){
+    // if(prevProps.token==null && this.props.token!==null){
+    //   this.props.history.push('/invitation')
+    // }
+  }
+
+  componentDidMount(){
+    console.log("token: ",token)
+  }
 
 
 
@@ -24,11 +35,11 @@ class App extends Component{
   return (
     <div className="App">
       <Router>
-      <Header/>
+      <Header {...this.props} />
       <Switch>
           <Route path="/" exact component={Login} />
-          <Route path="/dashboard" exact component={Dashboard} />
-          <Route path="/invitation" exact component={Invitation} />
+         {token!=null?<Route path="/dashboard" exact component={Dashboard} />:<Route/>}
+         {token!=null?<Route path="/invitation" exact component={Invitation} />:<Route/>}
           <Route path="/signup" exact component={_SignUp} />
       </Switch>
     </Router>
@@ -39,4 +50,18 @@ class App extends Component{
 
 }
 
-export default App;
+const mapStateToProps=(state)=>{
+  return{
+      token:state.authReducer.token,
+    
+  }
+}
+
+const mapDispatchToProps=(dispatch)=>{
+  return{
+  }
+}
+
+
+
+export default connect(mapStateToProps,mapDispatchToProps)(App)

@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react'
 import Styles from "../../assets/styles/scss/Login/Login.module.css"
 import {Row,Col,Form} from 'react-bootstrap'
-import {Button,Input} from "antd"
+import {Button,Input,Form as Forms} from "antd"
 import {Link} from "react-router-dom"
 import {images} from "../../constants"
 import {useForm,Controller} from "react-hook-form"
@@ -47,9 +47,10 @@ useEffect(()=>{
                                 <Form.Group controlId="formBasicEmail">
                                 <Form.Label>Email address</Form.Label>
                                 <Controller as={Input} control={control}
-                                name="email"
-                                placeholder="Enter your Email" size="large"  />
+                                name="email" 
+                                placeholder="Enter your Email" size="large"   />
                                 </Form.Group>
+                                {error!=null&&<h6>{error}</h6>}
                                 <Form.Group controlId="formBasicPassword">
                                 <Form.Label>Password</Form.Label>
                                  <Controller as={Input}
@@ -80,7 +81,7 @@ const mapStateToProps=(state)=>{
 
 const mapDispatchToProps=(dispatch)=>{
     return{
-        login:(email,password)=>dispatch(action.authStart(email,password))
+        login:(email,password)=>dispatch(action.authentication(email,password))
     }
 }
 
